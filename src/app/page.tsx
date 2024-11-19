@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="flex-1">
             <h3>Current Project</h3>
-            <p className="text-sm opacity-50">2024 - Present</p>
+            <p className="text-sm opacity-50">2025 - Present</p>
             <p>
               ???
             </p>
