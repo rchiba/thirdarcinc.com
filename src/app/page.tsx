@@ -43,7 +43,7 @@ export default function Home() {
           className="w-full max-w-2xl rounded-lg mb-8"
         />
         <p>
-          Hey! We're Ryo and Nik, co-founders of Third Arc Inc.
+          Hey! We're <a href="https://www.linkedin.com/in/ryochiba/" target="_blank">Ryo</a> and <a href="https://www.linkedin.com/in/nikhilaitharaju/" target="_blank">Nik</a>, co-founders of Third Arc Inc.
         </p>
         <p>
           We've been friends, co-workers, and co-founders for over a decade.
