@@ -3,19 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #ebe7e2;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PPEditorialNew", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "PPFraktionSans", Arial, Helvetica, sans-serif;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -0.2rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: underline;
+}
+
+@font-face {
+	font-family: "PPEditorialNew";
+	src: url(/fonts/PPEditorialNew.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: "PPFraktionSans";
+	src: url(/fonts/PPFraktionSans-normal.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: "PPFraktionSans";
+	src: url(/fonts/PPFraktionSans-bold.woff2) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap
 }

@@ -1,101 +1,66 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="sm:p-20">
+      <main className="flex flex-col gap-8 items-center sm:items-start max-w-3xl mx-auto">
+        <h2 className="mt-0">Third Arc Inc.</h2>
+        <p>
+          <b>Two</b> entrepreneurs working on their <b>third</b> venture together with <b>one</b> goal: Solving real business problems with intuitive tools.
+        </p>
+        <h2 className="mt-8">Our Work</h2>
+        <div className="flex gap-8 w-full">
+          <div className="flex-1">
+            <h3>TINT</h3>
+            <p className="text-sm opacity-50">2011 - 2018 (exited to Filestack)</p>
+            <p>
+              Helping brands tell authentic stories from their audiences
+            </p>
+            <p>
+              <a href="https://www.tintup.com" target="_blank">tintup.com</a>
+            </p>
+          </div>
+          <div className="flex-1">
+            <h3>Topic</h3>
+            <p className="text-sm opacity-50">2019 - 2021 (exited to Raptive)</p>
+            <p>
+              Helping content teams create better content, faster
+            </p>
+            <p>
+              <a href="https://www.usetopic.com" target="_blank">usetopic.com</a>
+            </p>
+          </div>
+          <div className="flex-1">
+            <h3>Current Project</h3>
+            <p className="text-sm opacity-50">2024 - Present</p>
+            <p>
+              Helping creators understand and act on their audience's desires
+            </p>
+          </div>
         </div>
+        <h2 className="mt-8">Our Story</h2>
+        <img 
+          src="/images/ryo_and_nik.jpg" 
+          alt="Ryo and Nik, co-founders of Third Arc Inc."
+          className="w-full max-w-2xl rounded-lg mb-8"
+        />
+        <p>
+          Hey! We're Ryo and Nik, co-founders of Third Arc Inc.
+        </p>
+        <p>
+          We've been friends, co-workers, and co-founders for over a decade.
+        </p>
+        <p>
+          In 2011, we met in the basement of a university library in Los Angeles. We built a social bookmarking platform called <a href="https://www.businessinsider.com/usc-students-launch-hypemarks-2012-7" target="_blank">Hypemarks</a>, which we then pivoted to a B2B marketing technology company called <a href="https://www.tintup.com" target="_blank">TINT</a>. We bootstrapped the company to 40 employees and thousands of customers worldwide. 
+        </p>
+        <p>
+          After <a href="https://www.thedrum.com/news/2018/09/18/filestack-builds-enterprise-credentials-with-tint-acquisition" target="_blank">exiting in 2018 to Filestack</a>, we decided to take everything we learned about SEO and content marketing to build our next company, <a href="https://www.usetopic.com" target="_blank">Topic</a>. We bootstrapped it to 250+ customers and 7-figure annual recurring revenue. 
+        </p>
+        <p>
+          After <a href="https://www.prnewswire.com/news-releases/cafemedia-announces-acquisition-of-leading-seo-platform-topic-301387841.html" target="_blank">exiting in 2021 to Raptive</a>, we joined their team for three years to help content creators grow their audience with our technology.
+        </p>
+        <p>
+          Now, we're working on our third arc.
+        </p>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
