@@ -1,13 +1,13 @@
 export default function Home() {
   return (
-    <div className="sm:p-20">
+    <div className="p-6 sm:p-20">
       <main className="flex flex-col gap-8 items-center sm:items-start max-w-3xl mx-auto">
         <h2 className="mt-0">Third Arc Inc.</h2>
         <p>
           <b>Two</b> entrepreneurs working on their <b>third</b> venture together with <b>one</b> goal: Solving real business problems with intuitive tools.
         </p>
         <h2 className="mt-8">Our Work</h2>
-        <div className="flex gap-8 w-full">
+        <div className="flex flex-col sm:flex-row gap-8 w-full">
           <div className="flex-1">
             <h3>TINT</h3>
             <p className="text-sm opacity-50">2011 - 2018 (exited to Filestack)</p>
