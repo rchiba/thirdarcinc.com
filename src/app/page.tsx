@@ -32,7 +32,7 @@ export default function Home() {
             <h3>Current Project</h3>
             <p className="text-sm opacity-50">2025 - Present</p>
             <p>
-              ???
+              Helping content creators gain insight to rank higher in search
             </p>
           </div>
         </div>
