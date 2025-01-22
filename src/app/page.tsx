@@ -29,10 +29,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex-1">
-            <h3>Current Project</h3>
+            <h3>Currently</h3>
             <p className="text-sm opacity-50">2025 - Present</p>
             <p>
-              Helping content creators gain insight to rank higher in search
+              Exploring different ideas
             </p>
           </div>
         </div>
